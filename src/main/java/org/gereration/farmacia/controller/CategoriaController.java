@@ -52,6 +52,7 @@ public class CategoriaController {
 
 	}
 
+	/* crude delete */
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable long id) {
 		repositoty.deleteById(id);
