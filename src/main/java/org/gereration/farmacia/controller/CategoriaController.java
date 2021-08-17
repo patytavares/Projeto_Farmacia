@@ -23,7 +23,8 @@ public class CategoriaController {
 
 	@Autowired
 	private CategoriaRepository repositoty;
-
+	
+	// Crud de lista de categoria
 	@GetMapping
 	public ResponseEntity<List<Categoria>> GetAll() {
 		return ResponseEntity.ok(repositoty.findAll());
